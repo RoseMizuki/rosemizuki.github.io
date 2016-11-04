@@ -36,54 +36,43 @@
 		Have no idea what time it is where I am? Fear not I've put a clock down below for you.</p>
 	<p id='time'></p>
 	<!-- start of JavaScript to display local time-->
-	<!-- script for startTime and checkTime from http://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock-->
+	<!-- script for startTime adapted from http://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock-->
 	<!-- script for calcTime from http://www.techrepublic.com/article/convert-the-local-time-to-another-time-zone-with-this-javascript/6016329/-->
 	<script>
-		/*function startTime() {
-   		var today = new Date();
-    		var h = today.getHours();
-    		var m = today.getMinutes();
-    		var s = today.getSeconds();
-   		m = checkTime(m);
-		s = checkTime(s);
-	     	document.getElementById('time').innerHTML =
-		h + ":" + m + ":" + s;
-		var t = setInterval(startTime, 500);
-		}
-		
-		function checkTime(i) {
-		    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-		    return i;
-		}*/
-		function startTime() {
-		var today = new Date();
-		if ( (today.getMonth() >= 10 && today.getDate() >=6) || (today.getMonth() <= 3 && today.getDate() <= 13)){
-			var time = calcTime('-8');
-		}
-		else{
-			var time = calcTime('-7');
-		}
-	     	document.getElementById('time').innerHTML = time;
-		var t = setTimeout(startTime, 500);
-		}
-		
-		function calcTime(offset) {
+		try{
+			function startTime() {
+			var today = new Date();
+			if ( (today.getMonth() >= 10 && today.getDate() >=6) || (today.getMonth() <= 3 && today.getDate() <= 13)){
+				var time = calcTime('-8');
+			}
+			else{
+				var time = calcTime('-7');
+			}
+			document.getElementById('time').innerHTML = time;
+			var t = setTimeout(startTime, 500);
+			}
 
-   		// create Date object for current location
-    		d = new Date();
-    
-		// convert to msec
-		// add local time zone offset 
-		    // get UTC time in msec
-		    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+			function calcTime(offset) {
 
-		    // create new Date object for different city
-		    // using supplied offset
-		    nd = new Date(utc + (3600000*offset));
+			// create Date object for current location
+			d = new Date();
 
-		    // return time as a string
-		    return nd.toLocaleString();
+			// convert to msec
+			// add local time zone offset 
+			    // get UTC time in msec
+			    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
 
+			    // create new Date object for different city
+			    // using supplied offset
+			    nd = new Date(utc + (3600000*offset));
+
+			    // return time as a string
+			    return nd.toLocaleString();
+
+			}
+		}
+		catch(err){
+			document.getElementById('time').innerHTML = ' ';
 		}
 
 	</script>
