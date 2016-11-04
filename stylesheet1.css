@@ -1,6 +1,9 @@
 body{
 	background-color: #C1E3F2;
-	padding: 65px;
+}
+
+h1 {
+	margin: 60px;
 }
 
 .nav-bar {
