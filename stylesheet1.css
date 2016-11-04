@@ -19,7 +19,7 @@ h1 {
 	list-style-type: none;
 }
 
-.nav-bar ul li{
+.nav-bar ul > li{
 	display: inline;
 }
 
