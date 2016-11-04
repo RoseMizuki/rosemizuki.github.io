@@ -29,5 +29,23 @@ li a {
 div {
 	padding: 20px;
 	margin-top: 40px;
+	width: 75%;
 	height: 1500px;
 }
+@media only screen and (min-width: 320px){
+	img {
+		width: 10%;
+		height: auto;
+	}
+@media only screen and (min-width: 768px){
+	img{
+		width: 30%;
+		height: auto;
+	}
+	
+@media only screen and (min-width:1200px){
+	img {
+		width: 50%;
+		height: auto;
+	}
+	
