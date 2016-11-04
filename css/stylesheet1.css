@@ -37,7 +37,7 @@ div > p{
 }
 @media only screen and (min-width: 320px){
 	div img {
-		width: 35%;
+		width: 90%;
 		height: auto;
 	}
 @media only screen and (min-width: 768px){
