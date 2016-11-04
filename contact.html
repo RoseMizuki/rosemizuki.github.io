@@ -35,8 +35,11 @@
 	<p> If you'd like to get a relatively fast response, please email me between 11am and 9pm PST. 
 		Have no idea what time it is where I am? Fear not I've put a clock down below for you.</p>
 	<p id='time'></p>
+	<!-- start of JavaScript to display local time-->
+	<!-- script for startTime and checkTime from http://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock-->
+	<!-- script for calcTime from http://www.techrepublic.com/article/convert-the-local-time-to-another-time-zone-with-this-javascript/6016329/-->
 	<script>
-		function startTime() {
+		/*function startTime() {
    		var today = new Date();
     		var h = today.getHours();
     		var m = today.getMinutes();
@@ -51,7 +54,32 @@
 		function checkTime(i) {
 		    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 		    return i;
+		}*/
+		function startTime() {
+   		var time = calcTime('-8');
+	     	document.getElementById('time').innerHTML = time;
+		var t = setInterval(startTime, 500);
 		}
+		
+		function calcTime(offset) {
+
+   		// create Date object for current location
+    		d = new Date();
+    
+		// convert to msec
+		// add local time zone offset 
+		    // get UTC time in msec
+		    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+		    // create new Date object for different city
+		    // using supplied offset
+		    nd = new Date(utc + (3600000*offset));
+
+		    // return time as a string
+		    return nd.toLocaleString();
+
+		}
+
 	</script>
 </div>
 </body>
