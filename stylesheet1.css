@@ -16,10 +16,10 @@ h1 {
   	background-color: #000000;
 }
 
-.nav-bar ul{
+.nav-bar ul li{
 	display: inline;
 }
-.nav-bar ul > a{
+.nav-bar ul li > a{
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 2em;
