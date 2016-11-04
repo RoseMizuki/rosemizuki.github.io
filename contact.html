@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Amy Quach">
-	<script src="js/time.js"></script>
 	<link rel="stylesheet" href="css/stylesheet1.css">
 	<title>Contact</title>
 </head>
@@ -35,7 +34,25 @@
 	</p>
 	<p> If you'd like to get a relatively fast response, please email me between 11am and 9pm PST. 
 		Have no idea what time it is where I am? Fear not I've put a clock down below for you.</p>
-	<p id= "txt"></p>
+	<p id='time'></p>
+	<script>
+		function startTime() {
+   		var today = new Date();
+    		var h = today.getHours();
+    		var m = today.getMinutes();
+    		var s = today.getSeconds();
+   		m = checkTime(m);
+		s = checkTime(s);
+	     	document.getElementById('txt').innerHTML =
+		h + ":" + m + ":" + s;
+		var t = setInterval(startTime, 500);
+		}
+		
+		function checkTime(i) {
+		    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		    return i;
+		}
+	</script>
 </div>
 </body>
 </html>
