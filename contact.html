@@ -58,7 +58,7 @@
 		function startTime() {
    		var time = calcTime('-8');
 	     	document.getElementById('time').innerHTML = time;
-		var t = setInterval(startTime, 500);
+		var t = setTimeout(startTime, 500);
 		}
 		
 		function calcTime(offset) {
