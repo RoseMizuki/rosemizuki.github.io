@@ -17,8 +17,12 @@ h1 {
 }
 .nav-bar ul{
 	list-style-type: none;
+}
+
+.nav-bar ul li{
 	display: inline;
 }
+
 .nav-bar ul li > a{
 	display: block;
 	text-decoration: none;
