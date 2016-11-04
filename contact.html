@@ -56,7 +56,13 @@
 		    return i;
 		}*/
 		function startTime() {
-   		var time = calcTime('-8');
+		var today = new Date();
+		if ( (today.getMonth() >= 10 && today.getDate() >=6) || (today.getMonth() <= 3 && today.getDate() <= 13){
+			var time = calcTime('-8');
+		}
+		else{
+			var time = calcTime('-7');
+		}
 	     	document.getElementById('time').innerHTML = time;
 		var t = setTimeout(startTime, 500);
 		}
