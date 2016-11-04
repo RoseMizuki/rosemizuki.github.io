@@ -18,9 +18,12 @@ h1 {
 
 nav ul li{
 	display: inline;
-}
-nav ul li > a{
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 2em;
 }
+/*nav ul li > a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 2em;
+}*/
