@@ -1,11 +1,7 @@
 body{
 	background-color: #C1E3F2;
 }
-div {
-	padding: 20px;
-	margin-top: 40px;
-	height: 1500px;
-}
+
 /* from http://www.w3schools.com/css/css_navbar.asp */
 ul {
     list-style-type: none;
@@ -36,4 +32,10 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
+}
+
+div {
+	padding: 20px;
+	margin-top: 40px;
+	height: 1500px;
 }
