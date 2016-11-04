@@ -17,6 +17,7 @@ h1 {
 }
 .nav-bar ul{
 	list-style-type: none;
+	display: inline;
 }
 .nav-bar ul li > a{
 	display: block;
