@@ -32,6 +32,9 @@ div {
 	width: 75%;
 	height: 1500px;
 }
+div > p{
+	margin: 15px;
+}
 @media only screen and (min-width: 320px){
 	img {
 		width: 30%;
