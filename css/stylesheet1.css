@@ -6,49 +6,29 @@ h1 {
 	margin: 60px;
 }
 
-/*.nav-bar {
-	position: fixed;
-	top: 0;
-  	left: 0;
-  	z-index: 9999;
-  	width: 100%;
- 	height: 50px;
-  	background-color: #000000;
-}
-.nav-bar ul{
-	list-style-type: none;
-}
-.nav-bar ul > li{
-	display: inline;
-}
-.nav-bar ul li > a{
-	display: block;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 2em;
-}
-*/
+/* from http://www.w3schools.com/css/css_navbar.asp */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+	position: fixed;
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #333;
 }
 
 li {
-    float: left;
+    	float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    	display: block;
+    	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    	background-color: #111;
 }
