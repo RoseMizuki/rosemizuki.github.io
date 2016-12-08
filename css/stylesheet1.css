@@ -47,6 +47,7 @@ div > img{
 	div img {
 		width: 50%;
 		height: auto;
+		padding: 30px;
 	}
 @media only screen and (min-width: 768px){
 	div {
@@ -62,7 +63,6 @@ div > img{
 	div {
 		width: 60%;
 		height: auto;
-		padding: 30px;
 	}
 	div img {
 		width: 50%;
