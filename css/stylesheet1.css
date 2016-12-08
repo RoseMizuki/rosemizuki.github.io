@@ -33,11 +33,12 @@ div {
 }
 div > p{
 	margin: 30px;
-	text-align: center;
 }
 div > h3{
 	margin: 30px;
-	text-align: center;
+}
+img{
+	padding: 30px;
 }
 @media only screen and (min-width: 320px){
 	div {
