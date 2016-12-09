@@ -34,12 +34,6 @@ div {
 div > p{
 	margin: 30px;
 }
-div > h3{
-	margin: 30px;
-}
-div > img{
-	padding: 30px;
-}
 @media only screen and (min-width: 320px){
 	div {
 		width: 100%;
@@ -47,7 +41,6 @@ div > img{
 	div img {
 		width: 50%;
 		height: auto;
-		padding: 30px;
 	}
 @media only screen and (min-width: 768px){
 	div {
@@ -56,7 +49,6 @@ div > img{
 	div img{
 		width: 40%;
 		height: auto;
-		padding: 30px;
 	}
 	
 @media only screen and (min-width:1200px){
@@ -67,6 +59,5 @@ div > img{
 	div img {
 		width: 50%;
 		height: auto;
-		padding: 30px;
 	}
 	
